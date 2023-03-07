@@ -29,7 +29,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.3.2
       with:
         server: wp10633224.server-he.de
-        username: ftp10633224-sonne
+        username: ftp10633224-khri8
         password: ${{ secrets.password }}
         local-dir: './dist/'
-        server-dir: 'sonnhalde-waldkirch/'
+        server-dir: 'www/sonnhalde-waldkirch/'
