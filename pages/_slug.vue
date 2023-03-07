@@ -25,17 +25,7 @@ export default {
   padding: 0 5vw;
 }
 
-h3, h4 {
-  color: var(--white);
-}
-
-p {
-  font-size: 18px;
-  color: var(--light-gray);
-}
-
 a {
   text-decoration: none;
-  color: var(--light-gray);
 }
 </style>

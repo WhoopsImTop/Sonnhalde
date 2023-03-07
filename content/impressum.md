@@ -1,30 +1,32 @@
-<h1 style="margin-bottom: 30px">Impressum</h1>
+<h1>Impressum</h1>
 
-<h3 style="color: #fff">Angaben gem&auml;&szlig; &sect; 5 TMG</h3>
-<p>Elias Englen<br />
-Grafikdesigner / Entwickler<br />
-Kiefernweg<br />
-12<br />
-79183 Kollnau</p>
+<h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
+<p>Projektgesellschaft Sonnhalde GmbH &amp; Co. KG<br />
+Kastelbergstra&szlig;e 19<br />
+79183 Waldkirch-Kollnau</p>
 
-<h3 style="color: #fff">Kontakt</h3>
-<p>Telefon: 015233592058<br />
-E-Mail: info@elias-englen.de</p>
+<p>Handelsregister: HRB717278<br />
+Registergericht: Amtsgericht Freiburg im Breisgau</p>
 
-<h3 style="color: #fff">Berufsbezeichnung und berufsrechtliche Regelungen</h3>
-<p>Berufsbezeichnung:<br />
-Grafikdesigner</p>
+<p><strong>Vertreten durch:</strong><br />
+Sonnhaldeverwaltungsgesellschaft mbH</p>
 
-<p>Verliehen in:<br />
-Deutschland</p>
+<p>Diese vertreten durch:<br />
+Markus Kappelhoff</p>
 
-<h3 style="color: #fff">Redaktionell verantwortlich</h3>
-<p>Elias Englen</p>
+<p>Handelsregister: HRA 705345<br />
+Registergericht: Amtsgericht Freiburg im Breisgau</p>
 
-<h3 style="color: #fff">EU-Streitschlichtung</h3>
+<h2>Kontakt</h2>
+<p>Telefon: +49 7681 47 05 0<br />
+Telefax: +49 7681 47 05 28<br />
+E-Mail: kontakt@sonnhalde-waldkirch.de</p>
+
+<h2>Redaktionell verantwortlich</h2>
+<p>Constantin Schindler</p>
+
+<h2>EU-Streitschlichtung</h2>
 <p>Die Europ&auml;ische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr/</a>.<br /> Unsere E-Mail-Adresse finden Sie oben im Impressum.</p>
 
-<h3 style="color: #fff">Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle</h3>
+<h2>Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle</h2>
 <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
-
-<p>Quelle: <a href="https://www.e-recht24.de">eRecht24</a></p>

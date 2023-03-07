@@ -4,15 +4,15 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'eliasenglen',
+    title: 'Sonnhalde Waldkirch',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Grafikdesigner und Kreativentwickler in Waldkirch' },
+      { hid: 'description', name: 'description', content: 'Neubaugebiet auf dem Ebertle' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/icon.svg' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap' }
     ]
   },
@@ -40,6 +40,7 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    '@nuxtjs/markdownit'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -48,15 +49,17 @@ export default {
     baseURL: '/',
   },
 
-  // PWA module configuration: https://go.nuxtjs.dev/pwa
-  pwa: {
-    manifest: {
-      lang: 'de'
-    }
+  // Content module configuration: https://go.nuxtjs.dev/config-content
+  content: {
   },
 
-  // Content module configuration: https://go.nuxtjs.dev/config-content
-  content: {},
+  markdownit: {
+    runtime: true, // Support `$md()`
+    preset: "default",
+    linkify: true,
+    breaks: true,
+    html: true,
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

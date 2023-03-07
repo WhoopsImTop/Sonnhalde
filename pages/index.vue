@@ -1,56 +1,59 @@
 <template>
   <div>
-    <Header></Header>
-    <div class="top-container">
-      <h3>Designer und Developer</h3>
-      <h1>
-        Kreative <br />
-        Business lösungen.
-      </h1>
-
-      <div class="action-container">
-        <nuxt-link to="/#kontakt" class="button-primary"
-          >Kontakt Aufnehmen</nuxt-link
-        >
-        <nuxt-link to="/#dienstleistungen" class="button-secondary"
-          >Dienstleistungen</nuxt-link
-        >
-      </div>
-    </div>
-
-    <DienstleistungComponent></DienstleistungComponent>
-
-    <AboutComponent></AboutComponent>
-
-    <PreisComponent></PreisComponent>
-
-    <KontaktComponent></KontaktComponent>
-
+    <infobanner></infobanner>
+    <observation-ball></observation-ball>
+    <slider id="oben"></slider>
+    <half-text-component
+      v-for="(information, index) in $store.state.informationen"
+      :key="index"
+      :id="information.title.toLowerCase()"
+      class="section"
+      :title="information.title"
+      :text="information.textContent"
+      :image="information.image"
+      :slider="information.slider"
+      :sliderItems="information.sliderImages"
+      :reverse="index % 2 == 0"
+    ></half-text-component>
     <FooterComponent></FooterComponent>
-  
-
   </div>
 </template>
 
 <script>
+import infobanner from '~/components/infobanner.vue';
 export default {
+  components: { infobanner },
   name: "IndexPage",
+  async asyncData({ params, store: { dispatch, getters } }) {
+    await dispatch("fetchInformationen");
+  },
+  head() {
+    return {
+      title: "Sonnhalde Waldkirch | Eingebunden in die Natur",
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: "description",
+          name: "description",
+          content: "",
+        },
+      ],
+    };
+  },
 };
 </script>
 
 <style>
 :root {
-  --dark-primary: #173022;
+  --dark-primary: #151515;
   --white: #ffffff;
   --black: #111111;
   --light-gray: #ffffff80;
   --gray: #888888;
-  --primary: #1fa45d;
-  --primary-half: #1fa45d50;
+  --primary: #000000;
 }
 
 body {
-  background-color: var(--black);
   font-family: "poppins", sans-serif;
   box-sizing: border-box;
   margin: 0;
@@ -61,17 +64,15 @@ h1 {
   line-height: 95px;
   margin: 0px;
   padding: 0px;
-  color: var(--white);
-  animation: fadeIn 1s ease-in-out;
+  color: var(--black);
 }
 
 h2 {
-  font-size: 60px;
+  font-size: 55px;
   line-height: 65px;
   margin: 0px;
   padding: 0px;
-  color: var(--white);
-  animation: fadeIn 2s ease-in-out;
+  color: var(--black);
 }
 
 h3 {
@@ -79,29 +80,28 @@ h3 {
   line-height: 35px;
   margin: 0 0 20px;
   padding: 0px;
-  color: var(--gray);
-  font-weight: 400;
-  animation: fadeIn 3s ease-in-out;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  color: var(--black);
+  font-weight: 600;
 }
 
 .top-container {
-  margin-top: 70px;
-  padding-top: 20vh;
+  overflow: hidden !important;
+  padding-top: 35vh;
+  padding-bottom: 40vh;
   padding-left: 5vw;
+  background-image: url("/sonnhalde-waldkirch-hd.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 a {
   text-decoration: none;
   font-size: 20px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.8em;
 }
 
 .button-secondary {
@@ -150,14 +150,6 @@ a {
     opacity: 1;
     transform: translateX(0px);
   }
-}
-
-.dienstleistungscontainer {
-  background-image: url("/elias-englen-background.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 45vh 5vw;
 }
 
 .grid-container {
@@ -230,7 +222,6 @@ h4 {
 }
 
 .certificate-text {
-  color: var(--white);
   font-size: 20px;
   margin-right: 10px;
 }
@@ -249,14 +240,13 @@ h4 {
 
 .point-container {
   display: flex;
-  color: var(--white);
   justify-content: center;
   align-items: center;
   margin-top: 30px;
 }
 
 .point-text {
-  width: 300px;
+  width: 350px;
 }
 
 .preis-container {
@@ -273,7 +263,6 @@ h4 {
 }
 
 .what-text {
-  color: var(--white);
   font-size: 18px;
   margin-top: -10px;
 }
@@ -322,7 +311,7 @@ h4 {
 }
 
 .highlight-text {
-  background: var(--primary-half);
+  background: var(--primary);
   width: 100%;
   text-align: center;
   padding: 20px 0;
@@ -333,7 +322,6 @@ h4 {
 }
 
 .info-text {
-  color: var(--white);
   position: relative;
   top: 10vh;
 }
@@ -402,6 +390,10 @@ h4 {
 
   .price-highlight {
     display: none;
+  }
+
+  .preis-container {
+    padding: 55vh 5vw 70vh 5vw;
   }
 }
 </style>
