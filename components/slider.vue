@@ -31,6 +31,11 @@ export default {
           subtitle: "Eingebunden in Natur.",
         },
         {
+          background: "'/slides/drohne.jpg'",
+          title: "Sonnhalde Waldkirch",
+          subtitle: "Aktuell im Bau",
+        },
+        {
           background: "'/slides/Sonnhalde_Expose_4.jpeg'",
           title: "Sonnhalde Waldkirch",
           subtitle: "Wohnungen direkt im Grünen",
@@ -44,11 +49,6 @@ export default {
           background: "'/slides/Sonnhalde_Expose_6.jpeg'",
           title: "Sonnhalde Waldkirch",
           subtitle: "Nachhaltige Materialien",
-        },
-        {
-          background: "'/slides/drohne.jpg'",
-          title: "Sonnhalde Waldkirch",
-          subtitle: "Aktuell im Bau",
         },
       ],
     };
