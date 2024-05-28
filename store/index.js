@@ -4,6 +4,8 @@ export const state = () => ({
 
 export const mutations = {
     setInformationen(state, payload) {
+        //order by order key
+        payload.sort((a, b) => a.order - b.order);
         state.informationen = payload;
     },
 };

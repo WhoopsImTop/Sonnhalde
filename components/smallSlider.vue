@@ -3,7 +3,7 @@
     <transition-group name="fade" tag="div">
       <div
         v-for="(slide, index) in slides"
-        :key="index"
+        :key="slide.title + index"
         v-show="index == activeIndex"
       >
         <slide :subtitle="slide.title" :backgroundImage="slide.img"></slide>

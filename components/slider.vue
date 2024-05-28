@@ -6,7 +6,7 @@
     <transition-group name="fade" tag="div">
       <div
         v-for="(slide, index) in slides"
-        :key="index"
+        :key="slide.subtitle + index"
         v-show="index == currentIndex"
       >
         <slide
