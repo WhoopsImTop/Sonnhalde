@@ -31,7 +31,22 @@ export default {
           subtitle: "Eingebunden in Natur.",
         },
         {
-          background: "'/slides/drohne.jpg'",
+          background: "'/slides/slide_1.jpg'",
+          title: "Sonnhalde Waldkirch",
+          subtitle: "Aktuell im Bau",
+        },
+        {
+          background: "'/slides/slide_2.jpg'",
+          title: "Sonnhalde Waldkirch",
+          subtitle: "Aktuell im Bau",
+        },
+        {
+          background: "'/slides/slide_3.jpg'",
+          title: "Sonnhalde Waldkirch",
+          subtitle: "Aktuell im Bau",
+        },
+        {
+          background: "'/slides/slide_5.jpg'",
           title: "Sonnhalde Waldkirch",
           subtitle: "Aktuell im Bau",
         },

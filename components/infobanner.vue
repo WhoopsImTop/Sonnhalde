@@ -3,8 +3,10 @@
     <button class="button" @click="close">
       <img width="25px" src="close.svg" />
     </button>
-    <h4>1. Bauabschnitt 65% verkauft!</h4>
-    <h5 style="color: #ffffff; margin: 10px 0 0">Förderfähig als “Klimafreundlicher Neubau” (KfW)</h5>
+    <h4>Bereits 80% verkauft!</h4>
+    <h5 style="color: #ffffff; margin: 10px 0 0">
+      Förderfähig als “Klimafreundlicher Neubau” (KfW)
+    </h5>
   </div>
 </template>
 
@@ -17,28 +19,9 @@ export default {
   },
   methods: {
     close() {
-      //set browser cookie
-      document.cookie = "verkaufsinformation=1; max-age=31536000; path=/";
-      //hide element
       this.$el.style.display = "none";
     },
   },
-  mounted() {
-    //get browser cookie
-    var name = "verkaufsinformation=";
-      var decodedCookie = decodeURIComponent(document.cookie);
-      var ca = decodedCookie.split(";");
-      for (let i = 0; i < ca.length; i++) {
-        let c = ca[i];
-        while (c.charAt(0) == " ") {
-          c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-          this.cookie = c.substring(name.length, c.length);
-        }
-      }
-      this.cookie = this.cookie == 1 ? true : false;
-  }
 };
 </script>
 
