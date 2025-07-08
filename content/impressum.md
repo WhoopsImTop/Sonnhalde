@@ -12,7 +12,7 @@ Registergericht: Amtsgericht Freiburg im Breisgau</p>
 Sonnhaldeverwaltungsgesellschaft mbH</p>
 
 <p>Diese vertreten durch:<br />
-Markus Kappelhoff</p>
+Constantin Schindler</p>
 
 <p>Handelsregister: HRA 705345<br />
 Registergericht: Amtsgericht Freiburg im Breisgau</p>
