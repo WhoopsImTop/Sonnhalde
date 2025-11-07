@@ -26,29 +26,29 @@ export default {
       currentIndex: 0,
       slides: [
         {
-          background: "'/slides/sonnhalde-waldkirch-hd.jpeg'",
+          background: "'/slides/slide_1.jpg'",
           title: "Sonnhalde Waldkirch",
           subtitle: "Eingebunden in Natur.",
         },
         {
-          background: "'/slides/slide_1.jpg'",
-          title: "Sonnhalde Waldkirch",
-          subtitle: "Aktuell im Bau",
-        },
-        {
           background: "'/slides/slide_2.jpg'",
           title: "Sonnhalde Waldkirch",
-          subtitle: "Aktuell im Bau",
+          subtitle: "Mit Blick ins Tal.",
         },
         {
           background: "'/slides/slide_3.jpg'",
           title: "Sonnhalde Waldkirch",
-          subtitle: "Aktuell im Bau",
+          subtitle: "Mit Blick ins Grüne.",
+        },
+        {
+          background: "'/slides/slide_4.jpg'",
+          title: "Sonnhalde Waldkirch",
+          subtitle: "Bereit zum einziehen.",
         },
         {
           background: "'/slides/slide_5.jpg'",
           title: "Sonnhalde Waldkirch",
-          subtitle: "Aktuell im Bau",
+          subtitle: "Umgeben vom Tal.",
         },
         {
           background: "'/slides/Sonnhalde_Expose_4.jpeg'",

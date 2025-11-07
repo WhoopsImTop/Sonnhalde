@@ -3,7 +3,7 @@
     <button class="button" @click="close">
       <img width="25px" src="close.svg" />
     </button>
-    <h4>Bereits 80% verkauft!</h4>
+    <h4>Noch 8 Wohnungen verfügbar!</h4>
     <h5 style="color: #ffffff; margin: 10px 0 0">
       Förderfähig als “Klimafreundlicher Neubau” (KfW)
     </h5>
